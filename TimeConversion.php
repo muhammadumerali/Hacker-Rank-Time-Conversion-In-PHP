@@ -17,6 +17,7 @@ function timeConversion($s) {
 
     $amPm = substr($s, -2);
 
+    //checking AM/PM
     if ($amPm === 'PM' && $hours != 12) {
         $hours += 12;
     } elseif ($amPm === 'AM' && $hours == 12) {
